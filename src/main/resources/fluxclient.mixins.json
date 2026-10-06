@@ -1,0 +1,40 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ru.kirka.fluxclient.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MinecraftClientMixin",
+    "MinecraftClientAccessor",
+    "KeyboardInputMixin",
+    "ClientCommonNetworkHandlerMixin",
+    "GameRendererMixin",
+    "KeyboardMixin",
+    "BackgroundRendererMixin",
+    "ClientWorldMixin",
+    "ClientWorldPropertiesMixin",
+    "LightmapTextureManagerMixin",
+    "InGameHudMixin",
+    "InGameOverlayRendererMixin",
+    "ClientPlayNetworkHandlerMixin",
+    "DeathScreenMixin",
+    "EntityMixin",
+    "HeldItemRendererMixin",
+    "CameraMixin",
+    "ClientPlayerEntitySprintAccessor",
+    "ScreenAccessor",
+    "TitleScreenMixin",
+    "MouseMixin",
+    "WorldRendererMixin",
+    "EntityRendererMixin",
+    "EntityRenderStateMixin",
+    "DrawContextAccessor",
+    "SkyRenderingMixin",
+    "SoundSystemMixin",
+    "ClientConnectionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "FluxClient-refmap.json"
+}

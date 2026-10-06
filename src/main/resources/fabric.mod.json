@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fluxclient",
+  "version": "1.0.0",
+  "name": "FluxClient",
+  "description": "клиент от кирки, самый хуёвый клиент :3",
+  "authors": [
+    "Kirka_int"
+  ],
+  "contact": {
+    "sources": "https://github.com/Kirka-int/FluxClient"
+  },
+  "license": "Proprietary",
+  "icon": "assets/fluxclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.kirka.fluxclient.FluxVisualsClient"
+    ]
+  },
+  "mixins": [
+    "fluxclient.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,29 @@
+package ru.kirka.fluxclient.render.batching.impl;
+
+import net.minecraft.client.render.VertexFormat;
+import net.minecraft.client.util.math.MatrixStack;
+import ru.kirka.fluxclient.render.batching.Batching;
+
+public class BlurBatching extends Batching {
+   private final MatrixStack matrices;
+   private final float width;
+   private final float height;
+
+   public BlurBatching(VertexFormat vertexFormat, MatrixStack matrices, float width, float height) {
+      super(vertexFormat);
+      this.matrices = matrices;
+      this.width = width;
+      this.height = height;
+   }
+
+   @Override
+   public void draw() {
+      if (active == this) {
+         active = null;
+      }
+   }
+
+   public MatrixStack getMatrices() {
+      return this.matrices;
+   }
+}
